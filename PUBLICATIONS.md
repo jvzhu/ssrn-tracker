@@ -33,19 +33,19 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 
 ---
 
-## Classification Notes
+## Classification Notes (2026-08-01)
 
-- **Paper:** *Exploring Art, Knowledge and Movement in Japanese Fashion 日本のファッションにおける芸術、知識、動きの探求* (SSRN abstract 7104098, <https://papers.ssrn.com/abstract=7104098>)
-- **Issue noted:** 2026-08-01. SSRN's automated (BETA) classifier placed this humanities paper (art history / fashion studies / Japanese cultural studies) into unrelated networks:
-  - Econometrics: Data Collection & Data Estimation Methodology (distributed 2026-07-30)
-  - Econometrics: Multiple Equation Models / Panel Data Models (distributed 2026-07-29)
-  - Environmental Data Analysis (scheduled 2030-01-22)
-  - Innovation Law & Policy / Innovation & Biolaw & Policy (distributed 2026-07-29)
-  - Electronic, Optical & Magnetic Materials (scheduled 2028-10-27)
-  - Organizations & Markets: Task Assignment (distributed 2026-07-29)
-  - Psychology Research Methods / Big Data Methodology (distributed 2026-07-29)
-- **Impact:** Distribution to wrong audiences likely suppresses views/downloads (33 views / 10 downloads as of 2026-08-01).
-- **Action:** Reclassification request to SSRN support pending — appropriate networks would be Humanities Research Network (HRN), Art & Culture, Asian Studies, or Literature.
-- **Follow-up:** Watch weekly `ssrn_stats_history.csv` snapshots for improvement after reclassification.
+- Paper: "Exploring Art, Knowledge and Movement in Japanese Fashion 日本のファッションにおける芸術、知識、動きの探求" (SSRN abstract 7104098, <https://papers.ssrn.com/abstract=7104098>)
+- Root cause (noted 2026-08-01): the SSRN record itself contained an incorrect abstract (a computer-vision/dataset description). That corrupted abstract propagated to downstream aggregators (SCHOLAT, figshare) and caused automated redistribution/classification into unrelated networks (Econometrics, Materials Science, etc.). In short: the SSRN record's abstract is the source of the misclassification.
+- Affiliation anomaly: the SSRN paper page shows multiple, likely-incorrect affiliations (e.g., School of Medicine; Stanford GSB; Hoover Institution; Science Publishing Group). Confirm and correct affiliations on the SSRN author profile if any are incorrect.
+- Prior-publication note: the work was also published via Eliva Press (2025), which explains the "Restricted by Publisher" flag on the SSRN record (ISBN: 978-99993-2-555-4).
+- Impact: incorrect classification/distribution likely reduces visibility to the appropriate humanities audience and distorts snapshots in `ssrn_stats_history.csv` (baseline snapshot: 33 abstract views · 10 downloads as of 2026-08-01).
+- Remediation checklist (dated entries for tracking):
+  1. 2026-08-01 — Revise SSRN abstract/keywords: replace the incorrect CV-dataset abstract with the true abstract (ma 間 / poiein / Dream of the Red Chamber) and remove stray keywords (e.g., "Philosophy of Physical Science").
+  2. 2026-08-01 — Correct SSRN author affiliations via My Account → Affiliations (remove any entries that are not genuine).
+  3. 2026-08-01 — Verify SUBMITTED papers (e.g., "The Corporate Stage", "Apolitical or Political") have correct abstracts before final processing.
+  4. 2026-08-01 — Open a reclassification request with SSRN Support after the SSRN record is corrected, asking for redistribution to appropriate networks (Humanities Research Network, Art & Culture, Asian Studies, Literature).
+  5. 2026-08-01+ — After SSRN confirms reclassification, check SCHOLAT and figshare copies and request corrections where necessary.
+  6. Ongoing — Monitor `ssrn_stats_history.csv` snapshots weekly for improved views/downloads after reclassification.
 
 Stats are tracked automatically each week in [`ssrn_stats_history.csv`](ssrn_stats_history.csv).
