@@ -34,6 +34,19 @@ A new row is appended to `ssrn_stats_history.csv` (created automatically on firs
 - **SCHOLAT visibility limits:** SCHOLAT may require login and may not expose paper stats publicly. The SCHOLAT tracker is intentionally best-effort and exits successfully even when no public paper entries are available.
 - **Weekly cadence:** Snapshots are taken once a week, which is intentionally infrequent to be respectful of SSRN's servers.
 
+## Known Data Issue: SSRN Record 7104098
+
+The SSRN record for "Exploring Art, Knowledge and Movement in Japanese Fashion" ([abstract 7104098](https://papers.ssrn.com/abstract=7104098)) contains an incorrect abstract (a computer-vision/dataset description), which propagated to downstream aggregators (SCHOLAT, figshare) and caused misclassification into unrelated SSRN networks (Econometrics, Materials Science, etc.). The paper page also shows likely-incorrect author affiliations, and the work's prior Eliva Press publication (2025) explains its "Restricted by Publisher" flag.
+
+**Remediation (tracked in detail in [PUBLICATIONS.md](./PUBLICATIONS.md#classification-notes)):**
+
+1. Revise the SSRN abstract/keywords to the correct content
+2. Correct SSRN author affiliations
+3. Verify abstracts of currently SUBMITTED papers
+4. Request reclassification via SSRN Support (Humanities/Asian Studies/Literature networks)
+5. Correct downstream SCHOLAT and figshare copies
+6. Monitor weekly `ssrn_stats_history.csv` snapshots for recovery (baseline: 33 views · 10 downloads as of 2026-08-01)
+
 ## Publications
 
 See [PUBLICATIONS.md](PUBLICATIONS.md) for a full list of publicly available papers and works in process.
