@@ -52,4 +52,27 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
   6. 2026-08-01+ — After SSRN confirms reclassification, check SCHOLAT and figshare copies and request corrections where necessary.
   7. Ongoing — Monitor `ssrn_stats_history.csv` snapshots weekly for improved views/downloads after reclassification.
 
+---
+
+## Appendix: Inactive / Removed Papers (as of 2026-08-01)
+
+These 12 records have REMOVED status on the SSRN author dashboard. They do not display on the author page, are not searchable on SSRN, and their downloads are not counted in the public totals. Documented here so the tracking history is complete. Five of the records are versions of the same paper ("Eloquence of the Zither"); going forward, prefer "Revise my Submission" on a single record over resubmitting new copies.
+
+| # | Abstract ID | Title | Created | Removed/Last Updated | Views | Downloads |
+|---|------------|-------|---------|----------------------|------:|----------:|
+| 1 | 6881061 | Eloquence of the Zither: The Validity of Jin Shengtan's Textual Changes and the Limitation of Jin's Comments | 2026-06-05 | 2026-06-05 | 3 | 1 |
+| 2 | 6728279 | Theater as a Dreamscape: Humor, Dread and Melancholy Through the Spatial Logic in Theatrical Performance | 2026-05-07 | 2026-05-19 | 8 | 1 |
+| 3 | 6547561 | Seventeenth-century Italian Scenographic Design and the Tongjinghua Paintings of Qianlong's Private Theaters | 2026-04-09 | 2026-05-15 | 57 | 10 |
+| 4 | 6233258 | Hori Tatsuo's Aesthetic Composition: Poetic Strolling, Philosophical Strolling 堀辰雄の美学構成：詩的な散歩、哲学的な散歩 | 2026-02-13 | 2026-03-05 | 4 | 2 |
+| 5 | 6159086 | The Palm of Beauty: Intermedial Rendering in Kawabata Yasunari's (1899-1972) Tanagokoro no Shōsetsu (1921-1972) | 2026-01-31 | 2026-02-05 | 4 | 3 |
+| 6 | 6087287 | Multi-Perspectival Technique Manifested Through Bernard's and Neville's Points of View in Virginia Woolf's The Waves | 2026-01-17 | 2026-01-29 | 6 | 2 |
+| 7 | 5765463 | "My Eye!": The Trope of Sight and Vision in Sixteenth and Seventeenth Century Literary Texts | 2025-11-18 | 2025-11-19 | 3 | 1 |
+| 8 | 5716582 | Eloquence of the Zither: The Validity of Jin Shengtan's Textual Changes and the Limitation of Jin's Comments | 2025-11-07 | 2025-11-13 | 2 | 1 |
+| 9 | 5646230 | Agree to (Dis)agree: A Shifting Point of View of the Disgraceful Other David Lurie in J. M. Coetzee's Disgrace (o.p. 1999) | 2025-10-23 | 2025-11-20 | 25 | 3 |
+| 10 | 5420094 | Eloquence of the Zither: The Validity of Jin Shengtan's Textual Changes and the Limitation of Jin's Comments | 2025-08-30 | 2025-09-02 | 1 | 1 |
+| 11 | 5401154 | Eloquence of the Zither: The Validity of Jin Shengtan's Textual Changes and the Limitation of Jin's Comments | 2025-08-22 | 2025-08-22 | 1 | 1 |
+| 12 | 5329588 | Eloquence of the Zither: The Validity of Jin Shengtan's Textual Changes and the Limitation of Jin's Comments | 2025-06-29 | 2025-07-10 | 5 | 2 |
+
+**Appendix totals: 12 removed records · 119 views · 28 downloads** (not counted in public author-page totals)
+
 Stats are tracked automatically each week in [`ssrn_stats_history.csv`](ssrn_stats_history.csv).
