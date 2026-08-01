@@ -5,7 +5,10 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 ## External Profiles
 
 - SCHOLAT (学者网): <https://www.scholat.com/vivienjiaqianzhu> — example paper page: <https://www.scholat.com/portalPaperInfo.html?paperID=65541&Entry=vivienjiaqianzhu>
-- Academia.edu: <https://www.academia.edu/143706443/_The_Beauty_of_Palm_A_Haptic_Textuality_in_Kawabata_Yasunari_s_1899_1972_Tanagokoro_no_sh%C3%B4setsu_1921_1972_> ("The Beauty of Palm: A Haptic Textuality in Kawabata Yasunari's (1899-1972) Tanagokoro no shôsetsu (1921-1972)")
+- Academia.edu: <https://stanford.academia.edu/VivienJiaqianZhu> — example paper page: <https://www.academia.edu/143706443/_The_Beauty_of_Palm_A_Haptic_Textuality_in_Kawabata_Yasunari_s_1899_1972_Tanagokoro_no_sh%C3%B4setsu_1921_1972_> ("The Beauty of Palm: A Haptic Textuality in Kawabata Yasunari's (1899-1972) Tanagokoro no shôsetsu (1921-1972)")
+- PhilPeople: <https://philpeople.org/profiles/vivien-jiaqian-zhu>
+- Loop (Frontiers): <https://loop.frontiersin.org/people/2954809/overview>
+- JISDCES editor biography: <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu>
 
 ## Publicly Available Papers
 
@@ -52,6 +55,38 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
   5. 2026-08-01 — Clean up draft submissions: delete the ~16 empty/duplicate drafts; retain the two containing unpublished work ("Guyang Cave at Longmen Site", "Family Story and Narratorial Frame").
   6. 2026-08-01+ — After SSRN confirms the correction and reclassification, check SCHOLAT and figshare copies and request corrections where necessary.
   7. Ongoing — Monitor `ssrn_stats_history.csv` snapshots weekly for improved views/downloads after reclassification.
+
+---
+
+## External Profile Audit (2026-08-01)
+
+Findings from a web search of third-party scholarly profiles associated with this author name. The misattribution problem on SSRN record 7104098 is NOT isolated: external profiles and aggregators carry additional misattributed and anomalous entries. Findings are from search-result summaries and should be verified against each live profile before acting.
+
+### Findings
+
+- 🚩 **Misattributed medical paper**: "Risk of thromboembolic events in patients with non-valvular atrial fibrillation after dabigatran or rivaroxaban discontinuation — data from the Ljubljana registry" (2016) — a Slovenian cardiology paper, entirely unrelated to this author's humanities work. Appears in aggregator listings (Loop and/or profiles derived from it). Same pattern as the CV-dataset abstract on SSRN 7104098: unrelated STEM content attached to a humanities record.
+- 🚩 **Future-dated entries**: papers dated 2027 ("The Corporate Stage", "The Evolving Landscape of Workplace — Challenges and Opportunities") — impossible dates as of 2026-08-01; indicates bad metadata at the source feeding these indexes.
+- ⚠️ **Unverified 2017 art-history papers**: "Labour and art during the Cultural Revolution: An analysis of the sculptural installation Wrath of the Serfs (1975)" and "(Pre)Occupied Artists in Occupied Lands: Three Case Studies of PRC Art Workers in Central Tibet" — plausible field but verify authorship before claiming or disclaiming.
+- ⚠️ **Affiliation claims**: the Academia.edu profile sits on the `stanford.academia.edu` subdomain and third-party bios describe a "visiting scholar, Stanford Department of Classics" appointment. Academia.edu subdomains are self-reported and unverified; align all profile affiliations with the same documentable set used for the SSRN cleanup (checklist item 2).
+- ✅ **Consistent with SSRN record**: "I Dwell in Possibility", "Peach Blossom Fan", "Eloquence of the Zither", "Guyang Cave" (draft), plus not-yet-released work ("Koe no ma 声の間", "Writing Empire and Self", "'Here and There:' Food, Safety and Community in Contemporary Performance Art").
+
+### Per-profile action items
+
+| Profile | URL | Actions |
+|---|---|---|
+| Academia.edu | <https://stanford.academia.edu/VivienJiaqianZhu> | Log in and audit the paper list; remove any misattributed entries (esp. the 2016 cardiology paper if present); fix future-dated (2027) entries; verify the Stanford subdomain/affiliation is defensible or change the affiliation setting. |
+| PhilPeople | <https://philpeople.org/profiles/vivien-jiaqian-zhu> | Claim/log in to the profile; remove misattributed papers; correct the "Stanford University" affiliation if not formally held. PhilPeople imports can be edited by the profile owner. |
+| Loop (Frontiers) | <https://loop.frontiersin.org/people/2954809/overview> | Log in and detach misattributed publications (esp. the Ljubljana registry cardiology paper); correct dates and affiliation. |
+| JISDCES | <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu> | Review the editor biography for accuracy; request corrections from the journal if it lists incorrect papers or affiliations. Note: assess whether this editorship is one to keep, given the venue's profile. |
+| SCHOLAT / figshare | (see External Profiles) | Already covered by remediation checklist item 6 — correct after SSRN confirms the 7104098 fix. |
+
+### Audit checklist
+
+1. 2026-08-01 — Verify each finding above against the live profile (search-result summaries may lag or mix records).
+2. 2026-08-01+ — Remove the misattributed cardiology paper from every profile listing it.
+3. 2026-08-01+ — Fix future-dated (2027) entries at the source profile so aggregators re-sync correct dates.
+4. 2026-08-01+ — Align affiliations across SSRN, Academia.edu, PhilPeople, and Loop to the same documentable set.
+5. Ongoing — Re-run a name search quarterly to catch new misattributions early.
 
 ---
 
