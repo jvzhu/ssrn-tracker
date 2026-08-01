@@ -16,10 +16,13 @@ jobs:
           python-version: "3.12"
       - run: pip install requests beautifulsoup4
       - run: python ssrn_stats_tracker.py
+      - run: python scholat_stats_tracker.py
+        continue-on-error: true
       - name: Commit snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add ssrn_stats_history.csv
+          [ -f scholat_stats_history.csv ] && git add scholat_stats_history.csv || true
           git commit -m "SSRN stats snapshot $(date +%F)" || echo "No changes"
           git push
