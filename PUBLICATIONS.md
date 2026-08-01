@@ -9,7 +9,7 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 - PhilPeople: <https://philpeople.org/profiles/vivien-jiaqian-zhu>
 - Loop (Frontiers): <https://loop.frontiersin.org/people/2954809/overview>
 - JISDCES editor biography: <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu>
-- Web of Science: <https://www.webofscience.com/wos/author/record/AHD-9980-2022> (ResearcherID AHD-9980-2022 — ownership unverified, see audit)
+- Web of Science: <https://www.webofscience.com/wos/author/record/AHD-9980-2022> (ResearcherID AHD-9980-2022 — contaminated merged cluster, see audit)
 
 ## Publicly Available Papers
 
@@ -45,7 +45,7 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 - Root cause (noted 2026-08-01): the SSRN record itself contained an incorrect abstract (a computer-vision/dataset description). That corrupted abstract propagated to downstream aggregators (SCHOLAT, figshare) and caused automated redistribution/classification into unrelated networks (Econometrics, Materials Science, etc.). In short: the SSRN record's abstract is the source of the misclassification.
 - Likely origin (noted 2026-08-01): probably a paste error during submission rather than an SSRN platform bug — several draft submissions on the author dashboard contain raw HTML in their titles (e.g., `<span>...</span>`, `<a href=...>...</a>`), indicating content has been pasted into the submission form from web sources. The wrong abstract was most plausibly pasted from an unrelated clipboard source. Mitigation: type or paste plain text only when revising/submitting; verify each record after submission.
 - Self-service revision blocked (confirmed 2026-08-01): the "Revise my Submission" function does NOT allow editing the abstract on 7104098 because the record carries the "Restricted by Publisher" flag (Eliva Press prior publication). The abstract correction must therefore be performed by SSRN Support — folded into the support ticket below (checklist item 1).
-- Affiliation anomaly: the SSRN author profile shows multiple, likely-incorrect affiliations (e.g., School of Medicine; Stanford GSB; Hoover Institution; Science Publishing Group). Confirm and correct affiliations on the SSRN author profile if any are incorrect.
+- Affiliation anomaly: the SSRN author profile shows multiple, likely-incorrect affiliations (e.g., School of Medicine; Stanford GSB; Hoover Institution; Science Publishing Group). Confirm and correct affiliations on the SSRN author profile if any are incorrect. Note (2026-08-01): the "School of Medicine" entry plausibly derives from the contaminated Web of Science cluster (see External Profile Audit) propagating through aggregators.
 - Prior-publication note: the work was also published via Eliva Press (2025), which explains the "Restricted by Publisher" flag on the SSRN record (ISBN: 978-99993-2-555-4).
 - Impact: incorrect classification/distribution likely reduces visibility to the appropriate humanities audience and distorts snapshots in `ssrn_stats_history.csv` (baseline snapshot: 33 abstract views · 10 downloads as of 2026-08-01).
 - Remediation checklist (dated entries for tracking):
@@ -61,16 +61,30 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 
 ## External Profile Audit (2026-08-01)
 
-Findings from a web search of third-party scholarly profiles associated with this author name. The misattribution problem on SSRN record 7104098 is NOT isolated: external profiles and aggregators carry additional misattributed and anomalous entries. Findings are from search-result summaries and should be verified against each live profile before acting.
+Findings from a web search of third-party scholarly profiles associated with this author name, plus a logged-in inspection of the Web of Science researcher record. The misattribution problem on SSRN record 7104098 is NOT isolated: external profiles and aggregators carry additional misattributed and anomalous entries.
 
 ### Findings
 
-- 🚩 **Misattributed medical paper**: "Risk of thromboembolic events in patients with non-valvular atrial fibrillation after dabigatran or rivaroxaban discontinuation — data from the Ljubljana registry" (2016) — a Slovenian cardiology paper, entirely unrelated to this author's humanities work. Appears in aggregator listings (Loop and/or profiles derived from it). Same pattern as the CV-dataset abstract on SSRN 7104098: unrelated STEM content attached to a humanities record.
+- ✅ RESOLVED — **Web of Science cluster contamination identified (2026-08-01)**: ResearcherID AHD-9980-2022 (<https://www.webofscience.com/wos/author/record/AHD-9980-2022>) is a merged/contaminated author cluster containing **76 records, of which only ~18 are genuinely this author's** (the humanities papers, 2024–2026). The remaining ~55–58 records belong to other researchers:
+  - **Mirjam Gubensek** (Slovenian haemostasis/cardiology researcher): ~33 medical papers from 1996–2016 explicitly show "Claimed Authorship: Gubensek, Mirjam / M." — including the 2016 Ljubljana registry paper. This is the upstream source of the cardiology misattribution that aggregators (Loop, PhilPeople, etc.) ingested.
+  - **Older biophysics/NMR cluster (1989–1996)**: ~23 additional papers on fibrinolysis, blood-clot lysis, ultrasound-potentiated thrombolysis, and NMR/MRI of fibrin gels (Thrombosis and Haemostasis, Blood, Journal of Clinical Investigation, etc.) — likely the same or an adjacent Slovenian research group, not this author.
+  - Also present: stray non-research records (2024 SGIM meeting abstracts, 2023 IJMS reviewer acknowledgment, 2021 ACNP author index, an empty "Social Sciences" stub).
+  - The profile shows "Manual authorship verification required for 43 publication(s)" — do NOT bulk-verify; verifying the medical papers would cement the contamination.
+  - Root cause: Clarivate name-based author disambiguation failure (high-collision name), not an error by this author or by SSRN. This also plausibly explains the incorrect "School of Medicine" affiliation on the SSRN profile.
+- 🚩 **Misattributed medical paper on aggregators**: "Risk of thromboembolic events in patients with non-valvular atrial fibrillation after dabigatran or rivaroxaban discontinuation — data from the Ljubljana registry" (2016, PLOS ONE) — confirmed to be Mirjam Gubensek's (see above); appears in aggregator listings (Loop and/or profiles derived from it) under this author's name.
 - 🚩 **Future-dated entries**: papers dated 2027 ("The Corporate Stage", "The Evolving Landscape of Workplace — Challenges and Opportunities") — impossible dates as of 2026-08-01; indicates bad metadata at the source feeding these indexes.
-- ⚠️ **Unverified 2017 art-history papers**: "Labour and art during the Cultural Revolution: An analysis of the sculptural installation Wrath of the Serfs (1975)" and "(Pre)Occupied Artists in Occupied Lands: Three Case Studies of PRC Art Workers in Central Tibet" — plausible field but verify authorship before claiming or disclaiming.
+- ⚠️ **Unverified 2017 art-history papers**: "Labour and art during the Cultural Revolution: An analysis of the sculptural installation Wrath of the Serfs (1975)" and "(Pre)Occupied Artists in Occupied Lands: Three Case Studies of PRC Art Workers in Central Tibet" — plausible field but verify authorship before claiming or disclaiming. Note: these are ABSENT from the WoS record, supporting the theory they belong to someone else.
 - ⚠️ **Affiliation claims**: the Academia.edu profile sits on the `stanford.academia.edu` subdomain and third-party bios describe a "visiting scholar, Stanford Department of Classics" appointment. Academia.edu subdomains are self-reported and unverified; align all profile affiliations with the same documentable set used for the SSRN cleanup (checklist item 2).
-- ⚠️ **Web of Science record of unverified ownership**: ResearcherID AHD-9980-2022 (<https://www.webofscience.com/wos/author/record/AHD-9980-2022>). Contents not publicly viewable (behind Clarivate login); could not be verified externally. The "-2022" suffix indicates the record was created in 2022 — before this author's first SSRN posting (2025-01) — so it is either a genuine record from earlier academic work (Berkeley/Cambridge era) or an algorithmically generated same-name cluster ("J. Zhu"/"Jiaqian Zhu" is a high-collision name) that may contain other authors' papers. Note: WoS-indexed medical literature is a plausible upstream source for the Ljubljana cardiology misattribution that aggregators like Loop ingest.
-- ✅ **Consistent with SSRN record**: "I Dwell in Possibility", "Peach Blossom Fan", "Eloquence of the Zither", "Guyang Cave" (draft), plus not-yet-released work ("Koe no ma 声の間", "Writing Empire and Self", "'Here and There:' Food, Safety and Community in Contemporary Performance Art").
+- ✅ **Consistent with SSRN record**: "I Dwell in Possibility" (Claimed Authorship: Zhu, Vivien Jiaqian on WoS ✅), "Peach Blossom Fan", "Eloquence of the Zither", "Guyang Cave" (draft), plus not-yet-released work ("Koe no ma 声の間", "Writing Empire and Self", "'Here and There:' Food, Safety and Community in Contemporary Performance Art", "Weaving the Periphery: Cloth, Doubleness and Urban Temporality in Lagos, Nigeria", "In Celebration of a Half-life" [Tsushima translation], "Family Story and Narratorial Frame").
+
+### Web of Science action plan (2026-08-01)
+
+Execute in this order on the WoS researcher profile (login required):
+
+1. **Delete the ~55–58 misattributed records** via each record's Delete button: all medical/biophysics papers 1989–2016 (Gubensek cluster + older fibrinolysis/NMR cluster), the SGIM/ACNP/IJMS stray records, and the empty "Social Sciences" stub. Do NOT delete the ~18 genuine humanities records.
+2. **Complete manual authorship verification for the ~18 genuine records only** (Peach Blossom Fan, I Dwell in Possibility, the Kawabata papers, Xu Wei, Guyang Cave, Sino-Japanese Literature, Apolitical or Political, Agree to (Dis)agree, Quirky translation, Eloquence of the Zither, Japanese Fashion, and the unreleased items). Never bulk-verify.
+3. **Submit a Clarivate "Data Correction" request** (link in the WoS page footer) reporting the cluster merge with Mirjam Gubensek's records, so the algorithm splits the clusters permanently — manual deletion alone can be undone by re-ingestion.
+4. **Link an ORCID iD** to the cleaned profile (see "Structural fix" below) to prevent re-merging.
 
 ### Per-profile action items
 
@@ -78,9 +92,9 @@ Findings from a web search of third-party scholarly profiles associated with thi
 |---|---|---|
 | Academia.edu | <https://stanford.academia.edu/VivienJiaqianZhu> | Log in and audit the paper list; remove any misattributed entries (esp. the 2016 cardiology paper if present); fix future-dated (2027) entries; verify the Stanford subdomain/affiliation is defensible or change the affiliation setting. |
 | PhilPeople | <https://philpeople.org/profiles/vivien-jiaqian-zhu> | Claim/log in to the profile; remove misattributed papers; correct the "Stanford University" affiliation if not formally held. PhilPeople imports can be edited by the profile owner. |
-| Loop (Frontiers) | <https://loop.frontiersin.org/people/2954809/overview> | Log in and detach misattributed publications (esp. the Ljubljana registry cardiology paper); correct dates and affiliation. |
+| Loop (Frontiers) | <https://loop.frontiersin.org/people/2954809/overview> | Log in and detach misattributed publications (esp. the Ljubljana registry cardiology paper — confirmed Gubensek's); correct dates and affiliation. |
 | JISDCES | <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu> | Review the editor biography for accuracy; request corrections from the journal if it lists incorrect papers or affiliations. Note: assess whether this editorship is one to keep, given the venue's profile. |
-| Web of Science | <https://www.webofscience.com/wos/author/record/AHD-9980-2022> | Open the record while signed in (institutional access if available). Check whether it is claimed or an unclaimed algorithmic cluster. Review the publication list for items that are not this author's (esp. medical/STEM entries, incl. the Ljubljana cardiology paper). If genuinely this author's: claim it, remove misattributed items, sync the correct affiliation. If not (or if it mixes multiple authors): submit a Clarivate data-change / "Correct this record" request to disassociate the name. |
+| Web of Science | <https://www.webofscience.com/wos/author/record/AHD-9980-2022> | ✅ Inspected 2026-08-01 — contaminated merged cluster confirmed. Execute the four-step action plan above (delete misattributed → verify ~18 genuine → Clarivate Data Correction request → ORCID link). |
 | SCHOLAT / figshare | (see External Profiles) | Already covered by remediation checklist item 6 — correct after SSRN confirms the 7104098 fix. |
 
 ### Structural fix: ORCID iD (recommended)
@@ -94,11 +108,11 @@ The recurring failure mode across SSRN, Loop, PhilPeople, and Web of Science is 
 
 ### Audit checklist
 
-1. 2026-08-01 — Verify each finding above against the live profile (search-result summaries may lag or mix records).
-2. 2026-08-01+ — Remove the misattributed cardiology paper from every profile listing it.
-3. 2026-08-01+ — Fix future-dated (2027) entries at the source profile so aggregators re-sync correct dates.
-4. 2026-08-01+ — Align affiliations across SSRN, Academia.edu, PhilPeople, Loop, and Web of Science to the same documentable set.
-5. 2026-08-01+ — Inspect WoS record AHD-9980-2022 (login required): determine ownership, claim or disassociate, and correct its publication list.
+1. ✅ 2026-08-01 — WoS record AHD-9980-2022 inspected: contaminated merged cluster confirmed (Gubensek + 1989–1996 biophysics cluster); ~18 of 76 records genuine.
+2. 2026-08-01+ — Execute the WoS four-step action plan (delete misattributed → verify genuine → Data Correction request → ORCID link).
+3. 2026-08-01+ — Remove the misattributed cardiology paper from every other profile listing it (Loop, PhilPeople, Academia.edu if present).
+4. 2026-08-01+ — Fix future-dated (2027) entries at the source profile so aggregators re-sync correct dates.
+5. 2026-08-01+ — Align affiliations across SSRN, Academia.edu, PhilPeople, Loop, and Web of Science to the same documentable set.
 6. 2026-08-01+ — Create/claim an ORCID iD and link it to SSRN, Web of Science, and Academia.edu (see "Structural fix" above).
 7. Ongoing — Re-run a name search quarterly to catch new misattributions early.
 
