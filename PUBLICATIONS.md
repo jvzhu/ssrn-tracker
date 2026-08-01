@@ -9,6 +9,7 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 - PhilPeople: <https://philpeople.org/profiles/vivien-jiaqian-zhu>
 - Loop (Frontiers): <https://loop.frontiersin.org/people/2954809/overview>
 - JISDCES editor biography: <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu>
+- Web of Science: <https://www.webofscience.com/wos/author/record/AHD-9980-2022> (ResearcherID AHD-9980-2022 — ownership unverified, see audit)
 
 ## Publicly Available Papers
 
@@ -68,6 +69,7 @@ Findings from a web search of third-party scholarly profiles associated with thi
 - 🚩 **Future-dated entries**: papers dated 2027 ("The Corporate Stage", "The Evolving Landscape of Workplace — Challenges and Opportunities") — impossible dates as of 2026-08-01; indicates bad metadata at the source feeding these indexes.
 - ⚠️ **Unverified 2017 art-history papers**: "Labour and art during the Cultural Revolution: An analysis of the sculptural installation Wrath of the Serfs (1975)" and "(Pre)Occupied Artists in Occupied Lands: Three Case Studies of PRC Art Workers in Central Tibet" — plausible field but verify authorship before claiming or disclaiming.
 - ⚠️ **Affiliation claims**: the Academia.edu profile sits on the `stanford.academia.edu` subdomain and third-party bios describe a "visiting scholar, Stanford Department of Classics" appointment. Academia.edu subdomains are self-reported and unverified; align all profile affiliations with the same documentable set used for the SSRN cleanup (checklist item 2).
+- ⚠️ **Web of Science record of unverified ownership**: ResearcherID AHD-9980-2022 (<https://www.webofscience.com/wos/author/record/AHD-9980-2022>). Contents not publicly viewable (behind Clarivate login); could not be verified externally. The "-2022" suffix indicates the record was created in 2022 — before this author's first SSRN posting (2025-01) — so it is either a genuine record from earlier academic work (Berkeley/Cambridge era) or an algorithmically generated same-name cluster ("J. Zhu"/"Jiaqian Zhu" is a high-collision name) that may contain other authors' papers. Note: WoS-indexed medical literature is a plausible upstream source for the Ljubljana cardiology misattribution that aggregators like Loop ingest.
 - ✅ **Consistent with SSRN record**: "I Dwell in Possibility", "Peach Blossom Fan", "Eloquence of the Zither", "Guyang Cave" (draft), plus not-yet-released work ("Koe no ma 声の間", "Writing Empire and Self", "'Here and There:' Food, Safety and Community in Contemporary Performance Art").
 
 ### Per-profile action items
@@ -78,15 +80,27 @@ Findings from a web search of third-party scholarly profiles associated with thi
 | PhilPeople | <https://philpeople.org/profiles/vivien-jiaqian-zhu> | Claim/log in to the profile; remove misattributed papers; correct the "Stanford University" affiliation if not formally held. PhilPeople imports can be edited by the profile owner. |
 | Loop (Frontiers) | <https://loop.frontiersin.org/people/2954809/overview> | Log in and detach misattributed publications (esp. the Ljubljana registry cardiology paper); correct dates and affiliation. |
 | JISDCES | <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu> | Review the editor biography for accuracy; request corrections from the journal if it lists incorrect papers or affiliations. Note: assess whether this editorship is one to keep, given the venue's profile. |
+| Web of Science | <https://www.webofscience.com/wos/author/record/AHD-9980-2022> | Open the record while signed in (institutional access if available). Check whether it is claimed or an unclaimed algorithmic cluster. Review the publication list for items that are not this author's (esp. medical/STEM entries, incl. the Ljubljana cardiology paper). If genuinely this author's: claim it, remove misattributed items, sync the correct affiliation. If not (or if it mixes multiple authors): submit a Clarivate data-change / "Correct this record" request to disassociate the name. |
 | SCHOLAT / figshare | (see External Profiles) | Already covered by remediation checklist item 6 — correct after SSRN confirms the 7104098 fix. |
+
+### Structural fix: ORCID iD (recommended)
+
+The recurring failure mode across SSRN, Loop, PhilPeople, and Web of Science is **name-based matching** on a high-collision name. The single best structural fix is an **ORCID iD** (<https://orcid.org>, free):
+
+1. Create (or locate an existing) ORCID iD and populate it with only the verified publication list from this file.
+2. Link the ORCID iD to the Web of Science researcher profile (Clarivate supports ORCID sync), SSRN account settings, and Academia.edu.
+3. Include the ORCID iD in all future submissions (SSRN, journals, conference systems) so records are matched by identifier, not by name.
+4. Once linked, aggregators progressively re-key on ORCID, which prevents new misattributions and makes existing ones easier to dispute.
 
 ### Audit checklist
 
 1. 2026-08-01 — Verify each finding above against the live profile (search-result summaries may lag or mix records).
 2. 2026-08-01+ — Remove the misattributed cardiology paper from every profile listing it.
 3. 2026-08-01+ — Fix future-dated (2027) entries at the source profile so aggregators re-sync correct dates.
-4. 2026-08-01+ — Align affiliations across SSRN, Academia.edu, PhilPeople, and Loop to the same documentable set.
-5. Ongoing — Re-run a name search quarterly to catch new misattributions early.
+4. 2026-08-01+ — Align affiliations across SSRN, Academia.edu, PhilPeople, Loop, and Web of Science to the same documentable set.
+5. 2026-08-01+ — Inspect WoS record AHD-9980-2022 (login required): determine ownership, claim or disassociate, and correct its publication list.
+6. 2026-08-01+ — Create/claim an ORCID iD and link it to SSRN, Web of Science, and Academia.edu (see "Structural fix" above).
+7. Ongoing — Re-run a name search quarterly to catch new misattributions early.
 
 ---
 
