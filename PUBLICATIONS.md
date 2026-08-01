@@ -1,6 +1,7 @@
 # Publications — Vivien Jiaqian Zhu
 
 SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5249645)
+ORCID iD: [0000-0002-1789-5272](https://orcid.org/0000-0002-1789-5272)
 
 ## External Profiles
 
@@ -10,6 +11,7 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 - Loop (Frontiers): <https://loop.frontiersin.org/people/2954809/overview>
 - JISDCES editor biography: <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu>
 - Web of Science: <https://www.webofscience.com/wos/author/record/AHD-9980-2022> (ResearcherID AHD-9980-2022 — contaminated merged cluster, see audit)
+- ORCID: <https://orcid.org/0000-0002-1789-5272> (claimed; contents pending verification — see audit checklist item 6)
 
 ## Publicly Available Papers
 
@@ -52,7 +54,7 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
   1. 2026-08-01 — ⚠️ BLOCKED for self-service, escalated to SSRN Support: correct the 7104098 abstract/keywords (restore the true ma 間 / poiein / Dream of the Red Chamber abstract; remove stray keywords such as "Philosophy of Physical Science"). The "Revise my Submission" path cannot edit the abstract due to the "Restricted by Publisher" flag, so the correction request is combined with the reclassification request in a single SSRN Support ticket, including the exact final abstract and keyword text so support can apply it directly.
   2. 2026-08-01 — Correct SSRN author affiliations via My Account → Affiliations (remove any entries that are not genuine).
   3. 2026-08-01 — "The Corporate Stage" (7183780) and "Apolitical or Political" (7174061) are visible on the public author page (1 download each as of 2026-08-01) but still SUBMITTED on the dashboard; verify their abstracts are correct before review completes, given the paste-error pattern.
-  4. 2026-08-01 — Send the combined SSRN Support ticket (abstract correction + reclassification): ask support to (a) replace the abstract/keywords on 7104098, (b) remove the paper from the unrelated networks and cancel future scheduled distributions (e.g., Environmental Data Analysis 2030-01-22; Electronic, Optical & Magnetic Materials 2028-10-27), and (c) reclassify into appropriate networks (Humanities Research Network, Art & Culture, Asian Studies, Literature).
+  4. 2026-08-01 — Send the combined SSRN Support ticket (abstract correction + reclassification): ask support to (a) replace the abstract/keywords on 7104098, (b) remove the paper from the unrelated networks and cancel future scheduled distributions (e.g., Environmental Data Analysis 2030-01-22; Electronic, Optical & Magnetic Materials 2028-10-27), and (c) reclassify into appropriate networks (Humanities Research Network, Art & Culture, Asian Studies, Literature). Include ORCID iD 0000-0002-1789-5272 in the ticket so SSRN associates it with the corrected record.
   5. 2026-08-01 — Clean up draft submissions: delete the ~16 empty/duplicate drafts; retain the two containing unpublished work ("Guyang Cave at Longmen Site", "Family Story and Narratorial Frame").
   6. 2026-08-01+ — After SSRN confirms the correction and reclassification, check SCHOLAT and figshare copies and request corrections where necessary.
   7. Ongoing — Monitor `ssrn_stats_history.csv` snapshots weekly for improved views/downloads after reclassification.
@@ -84,7 +86,7 @@ Execute in this order on the WoS researcher profile (login required):
 1. **Delete the ~55–58 misattributed records** via each record's Delete button: all medical/biophysics papers 1989–2016 (Gubensek cluster + older fibrinolysis/NMR cluster), the SGIM/ACNP/IJMS stray records, and the empty "Social Sciences" stub. Do NOT delete the ~18 genuine humanities records.
 2. **Complete manual authorship verification for the ~18 genuine records only** (Peach Blossom Fan, I Dwell in Possibility, the Kawabata papers, Xu Wei, Guyang Cave, Sino-Japanese Literature, Apolitical or Political, Agree to (Dis)agree, Quirky translation, Eloquence of the Zither, Japanese Fashion, and the unreleased items). Never bulk-verify.
 3. **Submit a Clarivate "Data Correction" request** (link in the WoS page footer) reporting the cluster merge with Mirjam Gubensek's records, so the algorithm splits the clusters permanently — manual deletion alone can be undone by re-ingestion.
-4. **Link an ORCID iD** to the cleaned profile (see "Structural fix" below) to prevent re-merging.
+4. **Link ORCID iD 0000-0002-1789-5272** to the cleaned profile (see "Structural fix" below) to prevent re-merging. ⚠️ Only AFTER steps 1–3 are done — linking while the cluster is contaminated could sync Gubensek's papers into the ORCID record.
 
 ### Per-profile action items
 
@@ -95,16 +97,18 @@ Execute in this order on the WoS researcher profile (login required):
 | Loop (Frontiers) | <https://loop.frontiersin.org/people/2954809/overview> | Log in and detach misattributed publications (esp. the Ljubljana registry cardiology paper — confirmed Gubensek's); correct dates and affiliation. |
 | JISDCES | <https://www.jisdces.com/editor-biography.php?id=1266&eName=Vivien-Jiaqian-Zhu> | Review the editor biography for accuracy; request corrections from the journal if it lists incorrect papers or affiliations. Note: assess whether this editorship is one to keep, given the venue's profile. |
 | Web of Science | <https://www.webofscience.com/wos/author/record/AHD-9980-2022> | ✅ Inspected 2026-08-01 — contaminated merged cluster confirmed. Execute the four-step action plan above (delete misattributed → verify ~18 genuine → Clarivate Data Correction request → ORCID link). |
+| ORCID | <https://orcid.org/0000-0002-1789-5272> | ✅ Claimed. Verify the works list contains only genuine publications (delete any imported Gubensek/medical items); set works and affiliations visibility to "Everyone"; keep affiliations to the documentable set. Then link to SSRN and — only after WoS cleanup — to Web of Science. |
 | SCHOLAT / figshare | (see External Profiles) | Already covered by remediation checklist item 6 — correct after SSRN confirms the 7104098 fix. |
 
-### Structural fix: ORCID iD (recommended)
+### Structural fix: ORCID iD
 
-The recurring failure mode across SSRN, Loop, PhilPeople, and Web of Science is **name-based matching** on a high-collision name. The single best structural fix is an **ORCID iD** (<https://orcid.org>, free):
+✅ **Claimed (2026-08-01): ORCID iD 0000-0002-1789-5272** (<https://orcid.org/0000-0002-1789-5272>). Remaining steps:
 
-1. Create (or locate an existing) ORCID iD and populate it with only the verified publication list from this file.
-2. Link the ORCID iD to the Web of Science researcher profile (Clarivate supports ORCID sync), SSRN account settings, and Academia.edu.
-3. Include the ORCID iD in all future submissions (SSRN, journals, conference systems) so records are matched by identifier, not by name.
-4. Once linked, aggregators progressively re-key on ORCID, which prevents new misattributions and makes existing ones easier to dispute.
+1. **Verify contents**: the works list must contain only the verified publication list from this file — delete any items that crept in via automated imports (esp. anything from the contaminated WoS cluster).
+2. **Set visibility to "Everyone"** for works and affiliations — a private ORCID cannot anchor aggregators.
+3. **Link to SSRN** (Personal Info → ORCID field) and include the iD in the SSRN Support ticket (remediation checklist item 4).
+4. **Link to Web of Science — ⚠️ only AFTER the WoS cluster cleanup (action plan steps 1–3)**; linking while contaminated could sync Gubensek's papers into the ORCID record.
+5. Include the ORCID iD in all future submissions (SSRN, journals, conference systems) so records are matched by identifier, not by name.
 
 ### Audit checklist
 
@@ -113,7 +117,7 @@ The recurring failure mode across SSRN, Loop, PhilPeople, and Web of Science is 
 3. 2026-08-01+ — Remove the misattributed cardiology paper from every other profile listing it (Loop, PhilPeople, Academia.edu if present).
 4. 2026-08-01+ — Fix future-dated (2027) entries at the source profile so aggregators re-sync correct dates.
 5. 2026-08-01+ — Align affiliations across SSRN, Academia.edu, PhilPeople, Loop, and Web of Science to the same documentable set.
-6. 2026-08-01+ — Create/claim an ORCID iD and link it to SSRN, Web of Science, and Academia.edu (see "Structural fix" above).
+6. ✅ 2026-08-01 — ORCID iD claimed: 0000-0002-1789-5272. Remaining: verify contents (only genuine works), set visibility to public, link to SSRN now; link to WoS only after the cluster cleanup (see "Structural fix" above).
 7. Ongoing — Re-run a name search quarterly to catch new misattributions early.
 
 ---
