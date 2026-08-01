@@ -1,6 +1,6 @@
 # ssrn-tracker
 
-Automated tracker for SSRN paper statistics (views/downloads) for author [Vivien Jiaqian Zhu](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5249645) (author ID 5249645).
+Automated tracker for SSRN paper download counts for author [Vivien Jiaqian Zhu](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5249645) (author ID 5249645).
 
 ## What it does
 

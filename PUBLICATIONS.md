@@ -23,7 +23,7 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 | 10 | Exploring Art, Knowledge and Movement in Japanese Fashion 日本のファッションにおける芸術、知識、動きの探求 | Distributed | 2026-07-12 | 33 | 10 |
 | 11 | Exploring Art, Knowledge and Movement in Japanese Fashion (2025 version) | Distributed | 2025-07-03 | 537 | — |
 
-**Totals: ~4,282 views · ~397 downloads** (snapshot as of 2026-08-01)
+**Totals: ~4,282 views · ~397 downloads** (manual snapshot as of 2026-08-01; the automated tracker records download counts only, so these totals are not kept in sync with `ssrn_stats_history.csv`)
 
 ## In Process
 
@@ -48,4 +48,4 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 - **Action:** Reclassification request to SSRN support pending — appropriate networks would be Humanities Research Network (HRN), Art & Culture, Asian Studies, or Literature.
 - **Follow-up:** Watch weekly `ssrn_stats_history.csv` snapshots for improvement after reclassification.
 
-Stats are tracked automatically each week in [`ssrn_stats_history.csv`](ssrn_stats_history.csv).
+Download counts are tracked automatically each week in [`ssrn_stats_history.csv`](ssrn_stats_history.csv); view counts are not tracked automatically.

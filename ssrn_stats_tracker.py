@@ -1,4 +1,4 @@
-"""Track SSRN paper views/downloads over time for an author.
+"""Track SSRN paper download counts over time for an author.
 
 Usage: python ssrn_stats_tracker.py
 Scheduled weekly via .github/workflows/ssrn-tracker.yml
@@ -25,7 +25,7 @@ def fetch_papers():
     papers = []
     # SSRN author pages list papers with abstract links and download stats;
     # adjust selectors if SSRN changes its markup.
-    for row in soup.select("div.papers-list li, tr"):
+    for row in soup.select("div.papers-list li, div.papers-list tr"):
         link = row.select_one("a[href*='abstract_id=']")
         if not link:
             continue
