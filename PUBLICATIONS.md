@@ -2,6 +2,11 @@
 
 SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5249645)
 
+## External Profiles
+
+- SCHOLAT (学者网): <https://www.scholat.com/vivienjiaqianzhu> — example paper page: <https://www.scholat.com/portalPaperInfo.html?paperID=65541&Entry=vivienjiaqianzhu>
+- Academia.edu: <https://www.academia.edu/143706443/_The_Beauty_of_Palm_A_Haptic_Textuality_in_Kawabata_Yasunari_s_1899_1972_Tanagokoro_no_sh%C3%B4setsu_1921_1972_> ("The Beauty of Palm: A Haptic Textuality in Kawabata Yasunari's (1899-1972) Tanagokoro no shôsetsu (1921-1972)")
+
 ## Publicly Available Papers
 
 | # | Title | Status | Created | Views | Downloads |
@@ -27,5 +32,20 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 - **Xu Wei's Melon and Vine** — Preliminary Upload, 2025-07-12
 
 ---
+
+## Classification Notes
+
+- **Paper:** *Exploring Art, Knowledge and Movement in Japanese Fashion 日本のファッションにおける芸術、知識、動きの探求* (SSRN abstract 7104098, <https://papers.ssrn.com/abstract=7104098>)
+- **Issue noted:** 2026-08-01. SSRN's automated (BETA) classifier placed this humanities paper (art history / fashion studies / Japanese cultural studies) into unrelated networks:
+  - Econometrics: Data Collection & Data Estimation Methodology (distributed 2026-07-30)
+  - Econometrics: Multiple Equation Models / Panel Data Models (distributed 2026-07-29)
+  - Environmental Data Analysis (scheduled 2030-01-22)
+  - Innovation Law & Policy / Innovation & Biolaw & Policy (distributed 2026-07-29)
+  - Electronic, Optical & Magnetic Materials (scheduled 2028-10-27)
+  - Organizations & Markets: Task Assignment (distributed 2026-07-29)
+  - Psychology Research Methods / Big Data Methodology (distributed 2026-07-29)
+- **Impact:** Distribution to wrong audiences likely suppresses views/downloads (33 views / 10 downloads as of 2026-08-01).
+- **Action:** Reclassification request to SSRN support pending — appropriate networks would be Humanities Research Network (HRN), Art & Culture, Asian Studies, or Literature.
+- **Follow-up:** Watch weekly `ssrn_stats_history.csv` snapshots for improvement after reclassification.
 
 Stats are tracked automatically each week in [`ssrn_stats_history.csv`](ssrn_stats_history.csv).
