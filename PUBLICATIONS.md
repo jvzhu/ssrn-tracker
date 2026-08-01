@@ -21,15 +21,17 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 | 8 | Sino-Japanese Literature in Perspective: A Short Communication to the World Literature | Distributed | 2026-04-30 | 178 | 18 |
 | 9 | Multi-layer Objecthood and Gender Performativity Manifested Through Shu-t'ung's Cross-dressing in The Plum in the Golden Vase | Distributed | 2026-07-06 | 86 | 18 |
 | 10 | Exploring Art, Knowledge and Movement in Japanese Fashion 日本のファッションにおける芸術、知識、動きの探求 | Distributed | 2026-07-12 | 33 | 10 |
-| 11 | The Corporate Stage: Algorithmic Surveillance, Hybrid Visibility, and the Paradox of Spectatorship in the Modern Workplace | Public | 2026-07-26 | — | 1 |
-| 12 | Apolitical or Political: Idealistic Love Pursuits Through the Expression of Individualism and Aestheticism in Eileen Chang's 張愛玲 Love in a Fallen City (傾城之戀) | Public | 2026-07-24 | — | 1 |
+| 11 | The Corporate Stage: Algorithmic Surveillance, Hybrid Visibility, and the Paradox of Spectatorship in the Modern Workplace | Submitted (visible on author page) | 2026-07-26 | — | 1 |
+| 12 | Apolitical or Political: Idealistic Love Pursuits Through the Expression of Individualism and Aestheticism in Eileen Chang's 張愛玲 Love in a Fallen City (傾城之戀) | Submitted (visible on author page) | 2026-07-24 | — | 1 |
 | 13 | Exploring Art, Knowledge and Movement in Japanese Fashion (2025 version, Eliva Press; ISBN 978-99993-2-555-4) | Distributed | 2025-07-03 | 537 | — |
 
 **Totals: 13 papers · ~4,282+ views · ~399 downloads** (snapshot as of 2026-08-01, per public author page)
 
 ## In Process
 
-- **Xu Wei's Melon and Vine** — Preliminary Upload, 2025-07-12
+- **The Corporate Stage** (abstract 7183780) — SUBMITTED on dashboard, already visible on public author page
+- **Apolitical or Political** (abstract 7174061) — SUBMITTED on dashboard, already visible on public author page
+- **Xu Wei's Melon and Vine** (abstract 5349244) — Preliminary Upload, 2025-07-12
 
 ---
 
@@ -37,15 +39,17 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 
 - Paper: "Exploring Art, Knowledge and Movement in Japanese Fashion 日本のファッションにおける芸術、知識、動きの探求" (SSRN abstract 7104098, <https://papers.ssrn.com/abstract=7104098>)
 - Root cause (noted 2026-08-01): the SSRN record itself contained an incorrect abstract (a computer-vision/dataset description). That corrupted abstract propagated to downstream aggregators (SCHOLAT, figshare) and caused automated redistribution/classification into unrelated networks (Econometrics, Materials Science, etc.). In short: the SSRN record's abstract is the source of the misclassification.
-- Affiliation anomaly: the SSRN paper page shows multiple, likely-incorrect affiliations (e.g., School of Medicine; Stanford GSB; Hoover Institution; Science Publishing Group). Confirm and correct affiliations on the SSRN author profile if any are incorrect.
+- Likely origin (noted 2026-08-01): probably a paste error during submission rather than an SSRN platform bug — several draft submissions on the author dashboard contain raw HTML in their titles (e.g., `<span>...</span>`, `<a href=...>...</a>`), indicating content has been pasted into the submission form from web sources. The wrong abstract was most plausibly pasted from an unrelated clipboard source. Mitigation: type or paste plain text only when revising/submitting; verify each record after submission.
+- Affiliation anomaly: the SSRN author profile shows multiple, likely-incorrect affiliations (e.g., School of Medicine; Stanford GSB; Hoover Institution; Science Publishing Group). Confirm and correct affiliations on the SSRN author profile if any are incorrect.
 - Prior-publication note: the work was also published via Eliva Press (2025), which explains the "Restricted by Publisher" flag on the SSRN record (ISBN: 978-99993-2-555-4).
 - Impact: incorrect classification/distribution likely reduces visibility to the appropriate humanities audience and distorts snapshots in `ssrn_stats_history.csv` (baseline snapshot: 33 abstract views · 10 downloads as of 2026-08-01).
 - Remediation checklist (dated entries for tracking):
-  1. 2026-08-01 — Revise SSRN abstract/keywords: replace the incorrect CV-dataset abstract with the true abstract (ma 間 / poiein / Dream of the Red Chamber) and remove stray keywords (e.g., "Philosophy of Physical Science").
+  1. 2026-08-01 — Revise SSRN abstract/keywords: replace the incorrect CV-dataset abstract with the true abstract (ma 間 / poiein / Dream of the Red Chamber) and remove stray keywords (e.g., "Philosophy of Physical Science"). Enter as plain text; do not paste from web pages.
   2. 2026-08-01 — Correct SSRN author affiliations via My Account → Affiliations (remove any entries that are not genuine).
-  3. 2026-08-01 — ✅ "The Corporate Stage" and "Apolitical or Political" cleared SSRN review and are now publicly available (1 download each as of 2026-08-01); verify their published abstracts are correct.
+  3. 2026-08-01 — "The Corporate Stage" (7183780) and "Apolitical or Political" (7174061) are visible on the public author page (1 download each as of 2026-08-01) but still SUBMITTED on the dashboard; verify their abstracts are correct before review completes, given the paste-error pattern.
   4. 2026-08-01 — Open a reclassification request with SSRN Support after the SSRN record is corrected, asking for redistribution to appropriate networks (Humanities Research Network, Art & Culture, Asian Studies, Literature).
-  5. 2026-08-01+ — After SSRN confirms reclassification, check SCHOLAT and figshare copies and request corrections where necessary.
-  6. Ongoing — Monitor `ssrn_stats_history.csv` snapshots weekly for improved views/downloads after reclassification.
+  5. 2026-08-01 — Clean up draft submissions: delete the ~16 empty/duplicate drafts; retain the two containing unpublished work ("Guyang Cave at Longmen Site", "Family Story and Narratorial Frame").
+  6. 2026-08-01+ — After SSRN confirms reclassification, check SCHOLAT and figshare copies and request corrections where necessary.
+  7. Ongoing — Monitor `ssrn_stats_history.csv` snapshots weekly for improved views/downloads after reclassification.
 
 Stats are tracked automatically each week in [`ssrn_stats_history.csv`](ssrn_stats_history.csv).
