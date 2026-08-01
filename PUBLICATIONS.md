@@ -21,14 +21,14 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 | 8 | Sino-Japanese Literature in Perspective: A Short Communication to the World Literature | Distributed | 2026-04-30 | 178 | 18 |
 | 9 | Multi-layer Objecthood and Gender Performativity Manifested Through Shu-t'ung's Cross-dressing in The Plum in the Golden Vase | Distributed | 2026-07-06 | 86 | 18 |
 | 10 | Exploring Art, Knowledge and Movement in Japanese Fashion 日本のファッションにおける芸術、知識、動きの探求 | Distributed | 2026-07-12 | 33 | 10 |
-| 11 | Exploring Art, Knowledge and Movement in Japanese Fashion (2025 version) | Distributed | 2025-07-03 | 537 | — |
+| 11 | The Corporate Stage: Algorithmic Surveillance, Hybrid Visibility, and the Paradox of Spectatorship in the Modern Workplace | Public | 2026-07-26 | — | 1 |
+| 12 | Apolitical or Political: Idealistic Love Pursuits Through the Expression of Individualism and Aestheticism in Eileen Chang's 張愛玲 Love in a Fallen City (傾城之戀) | Public | 2026-07-24 | — | 1 |
+| 13 | Exploring Art, Knowledge and Movement in Japanese Fashion (2025 version, Eliva Press; ISBN 978-99993-2-555-4) | Distributed | 2025-07-03 | 537 | — |
 
-**Totals: ~4,282 views · ~397 downloads** (snapshot as of 2026-08-01)
+**Totals: 13 papers · ~4,282+ views · ~399 downloads** (snapshot as of 2026-08-01, per public author page)
 
 ## In Process
 
-- **The Corporate Stage: Algorithmic Surveillance, Hybrid Visibility, and the Paradox of Spectatorship in the Modern Workplace** — Submitted, 2026-07-26
-- **Apolitical or Political: Idealistic Love Pursuits in Eileen Chang's Love in a Fallen City 傾城之戀** — Submitted, 2026-07-24
 - **Xu Wei's Melon and Vine** — Preliminary Upload, 2025-07-12
 
 ---
@@ -43,7 +43,7 @@ SSRN Author ID: [5249645](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_
 - Remediation checklist (dated entries for tracking):
   1. 2026-08-01 — Revise SSRN abstract/keywords: replace the incorrect CV-dataset abstract with the true abstract (ma 間 / poiein / Dream of the Red Chamber) and remove stray keywords (e.g., "Philosophy of Physical Science").
   2. 2026-08-01 — Correct SSRN author affiliations via My Account → Affiliations (remove any entries that are not genuine).
-  3. 2026-08-01 — Verify SUBMITTED papers (e.g., "The Corporate Stage", "Apolitical or Political") have correct abstracts before final processing.
+  3. 2026-08-01 — ✅ "The Corporate Stage" and "Apolitical or Political" cleared SSRN review and are now publicly available (1 download each as of 2026-08-01); verify their published abstracts are correct.
   4. 2026-08-01 — Open a reclassification request with SSRN Support after the SSRN record is corrected, asking for redistribution to appropriate networks (Humanities Research Network, Art & Culture, Asian Studies, Literature).
   5. 2026-08-01+ — After SSRN confirms reclassification, check SCHOLAT and figshare copies and request corrections where necessary.
   6. Ongoing — Monitor `ssrn_stats_history.csv` snapshots weekly for improved views/downloads after reclassification.
