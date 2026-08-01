@@ -90,6 +90,6 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
     try:
         sys.exit(main())
-    except Exception as exc:  # safety: never fail workflow on SCHOLAT scrape edge cases
-        logging.warning("SCHOLAT tracker encountered a non-fatal error: %s", exc)
+    except Exception:  # safety: never fail workflow on SCHOLAT scrape edge cases
+        logging.exception("SCHOLAT tracker encountered a non-fatal error")
         sys.exit(0)
